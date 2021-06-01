@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+<style>
+    body{
+        margin-left: 40%;
+    }
+</style>
+    </head>
+    <body>
+        <form name="form" >
+            <label for="name">Name:</label><br>
+            <input type="text" id="name"  ><br>
+            <label for=age>Age</label><br>
+            <input type="text" id="age" ><br><br>
+            <label for=pwd>password</label><br>
+            <input type="password" id="pwd" ><br><br>
+
+            <p> Select your Gender</p>
+            <input type="radio" id="male"  value="male">
+            <label for=male>Age</label><br>
+            <input type="radio" id="female"  value="female">
+            <label for=female>Age</label><br>
+            <input type="radio" id="transgender"  value="transgender">
+            <label for=transgender>Transgender</label><br>
+            
+            
+            <button onclick="vname();  ">SUBMIT</button> 
+         </form> 
+
+         <script>
+          function vname(){
+              var x = document.getElementById("name").value;
+              var y = document.getElementById("age").value;
+              var z = document.getElementById("pwd").length;
+              if(x==""){
+                  alert("Enter name");
+              }
+              else if(y<=18){
+                  alert("not allowed");
+              }
+              else if(z.length<5){
+                alert("small");
+              }
+            }
+       
+            comsole.log( document.getElementById("name").val);
+        
+         </script>
+
+      
+    </body>
+</html>
